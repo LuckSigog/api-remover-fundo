@@ -1,10 +1,6 @@
 version: '3.8'
-
 services:
-  api-remover-fundo:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  api-removedor-fundo:
+    image: lucksigog/api-removedor-fundo:latest
     ports:
       - "8085:8000"
-    restart: unless-stopped
